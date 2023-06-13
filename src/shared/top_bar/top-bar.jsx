@@ -1,4 +1,11 @@
 import "./top-bar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocation,
+  faQuestion,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+
 const TopBar = () => {
   return (
     <div className="minibar">
@@ -6,15 +13,15 @@ const TopBar = () => {
         <p className="deal">Super Deal! free membership weekend</p>
       </div>
       <div className="child">
-        {/* <i className="bi bi-geo-alt"></i> */}
+        <FontAwesomeIcon icon={faLocation} />
         <p className="text">Contact</p>
       </div>
       <div className="child">
-        {/* <i className="bi bi-question-lg"></i> */}
+        <FontAwesomeIcon icon={faQuestion} />
         <p className="text">Need help</p>
       </div>
       <div className="child">
-        {/* <i className="bi bi-person"></i> */}
+        <FontAwesomeIcon icon={faUser} />
         <p className="text">Sign In / Register</p>
       </div>
     </div>
