@@ -1,0 +1,52 @@
+/* Midbar styles  */
+.midbar{
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.logo{
+  margin-left: 127px;
+  padding: 16px 0;
+}
+.search_input{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #262626;
+}
+
+.area {
+  background-color: #F3A847;
+  padding: 2px 0px 4px 10px;
+  
+}
+.faIcon {
+  margin-right: 10px;
+}
+input.search {
+  width: 100%;
+  padding: 4px 10px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Inter';
+}
+
+.bi-search{
+  margin-right: 10px;
+}
+
+.bi-telephone {
+  font-size: 18px;
+}
+.cell_phone{
+  display: flex;
+  align-items: center;
+}
+
+.call_number > p{
+  font-size: 14px;
+  margin-left: 10px;
+}
