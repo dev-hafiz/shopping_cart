@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter';
+}
+
+/* Minibar styles */
+.minibar{
+  background: #262626;
+  color: #fff;
+  padding: 8px 20px;
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 3fr;
+  justify-items: stretch;
+  align-items: stretch;
+  font-size: 14px;
+}
+
+.child{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deal{
+  margin-left: -134px;
+}
+.text{
+  margin-left: 3px;
+}

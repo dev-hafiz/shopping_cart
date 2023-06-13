@@ -1,8 +1,12 @@
+import { Outlet } from "react-router-dom";
+import Header from "../shared/header/header";
+
 const Main = () => {
   return (
-    <div>
-      <h1>This is h1</h1>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
 };
 
