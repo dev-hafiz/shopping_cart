@@ -1,0 +1,152 @@
+[
+  {
+    "id": "B002RL8IYK",
+    "category": "laptop",
+    "name": "Microsoft Surface Pro (Intel Core i5, 8GB RAM, 256GB)",
+    "seller": "Microsoft",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 303,
+    "star": 4,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/nCvgc6M/demo-Product1.png",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 100.36,
+    "shipping": 7.99,
+    "quantity": 0
+  },
+  {
+    "id": "Y5642R53HX",
+    "category": "laptop",
+    "name": "HP 7th Gen Laptop (Intel Core i8, 16GB RAM, 256GB SSD)",
+    "seller": "HP Brand",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 2,
+    "star": 4.5,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/JBvrKG4/product2.png",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 89.65,
+    "shipping": 7.99,
+    "quantity": 0
+  },
+  {
+    "id": "GD430L8I976L",
+    "category": "laptop",
+    "name": "Toshiba C40-G-13F Celeron 5205U 14",
+    "seller": "Toshiba",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 303,
+    "star": 4,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/DRxPxM4/evo-laptop-product-image-transparent-background-png-rendition-intel-web-576-324.png",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 67.36,
+    "shipping": 7.99,
+    "quantity": 0
+  },
+  {
+    "id": "K6432RL8QWE",
+    "category": "laptop",
+    "name": "Lenovo IdeaPad D330 10IGL Intel CDC N4020 10",
+    "seller": "Lenovo",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 303,
+    "star": 5,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/r4K0vgq/d330-1-500x500.jpg",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 70.56,
+    "shipping": 7.99,
+    "quantity": 0
+  },
+  {
+    "id": "AL67902RLHJ",
+    "category": "laptop",
+    "name": "Asus Vivobook X515MA Celeron N4020 15",
+    "seller": "Microsoft",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 303,
+    "star": 4,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/N3jMfV4/vivobook-x515ma-01-500x500.jpg",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 45.76,
+    "shipping": 7.99,
+    "quantity": 0
+  },
+  {
+    "id": "JHD789SL0",
+    "category": "laptop",
+    "name": "ASUS VivoBook 15 X515JA Core i3 10th Gen 512GB SSD",
+    "seller": "Microsoft",
+    "wholePrice": "68",
+    "priceFraction": "36",
+    "stock": 303,
+    "star": 4,
+    "starCount": 3245,
+    "img": "https://i.ibb.co/bJ2Wrtx/ideapad-slim-3i-0010-500x500.jpg",
+    "features": [
+      {
+        "description": "Display Size",
+        "value": "17 inches"
+      },
+      {
+        "description": "Hardware Platform",
+        "value": "PC"
+      }
+    ],
+    "price": 60.34,
+    "shipping": 7.99,
+    "quantity": 0
+  }
+]
