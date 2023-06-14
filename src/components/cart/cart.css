@@ -1,0 +1,76 @@
+/* Right Side Cart Area styles */
+
+.cart{
+  border-left: 1px solid #E7E2E2;
+  margin-top: 26px;
+  
+  }
+  
+  .cart_element{
+    margin-top: 46px;
+    margin-left: 20px;
+  }
+  
+  .summary{
+    display: flex;
+    position: relative;
+    width: 90px;
+    margin-bottom: 25px;
+  }
+  .item_counter{
+    /* background-color: red; */
+    color: black;
+    padding: 3px 3px;
+    border-radius: 3px;
+    position: absolute;
+    top: -14px;
+    right: 0;
+  }
+  .summary > h3 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .table{
+    margin-bottom: 60px;
+  }
+  
+  table{
+    width: 90%;
+  }
+  table, tr, td{
+    font-weight: 600;
+  }
+  .payment{
+    display: flex;
+  }
+  
+  .space{
+   padding-top: 20px;
+  }
+  
+  .cart_payment__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .order_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .button{
+    width: 250px;
+    height: 34px;
+    background: #F7CA00;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+  }
+  .button:hover{
+    background: #eac004;
+    transition: .3s linear;
+  }

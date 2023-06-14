@@ -10,7 +10,13 @@ export const router = createBrowserRouter([
     element: <Main />,
     children: [
       { path: "/", element: <Shop /> },
-      { path: "shop", element: <Shop /> },
+      {
+        path: "shop",
+        loader: () => {
+          return fetch("products.json");
+        },
+        element: <Shop />,
+      },
       { path: "orderreview", element: <ReviewOrder /> },
     ],
     errorElement: <NotFound />,
