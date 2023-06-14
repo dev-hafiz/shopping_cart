@@ -31,7 +31,6 @@ const Product = ({ product, handleIncrement }) => {
 
               <button
                 onClick={() => handleIncrement(product)}
-                className="button"
                 type="submit"
                 name="button"
               >

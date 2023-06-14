@@ -83,3 +83,17 @@
   background-color: #E7E2E2;
   margin: 0 auto;
 }
+
+.quantity button{
+  width: 250px;
+  height: 34px;
+  background: #F7CA00;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+}
+.quantity button{
+  background: #eac004;
+  transition: .3s linear;
+}
