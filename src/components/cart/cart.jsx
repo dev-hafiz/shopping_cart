@@ -1,13 +1,17 @@
 import "./cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cart }) => {
+  console.log(cart);
   let subTotal = 0;
   let shipping = 0;
+  let quantity = 0;
+
   for (const product of cart) {
-    subTotal = subTotal + product.price;
+    quantity = quantity + product.quantity;
+    subTotal = subTotal + product.price * product.quantity;
     shipping = shipping + product.shipping;
   }
-  const tax = subTotal * 0.1;
+  const tax = parseFloat((subTotal * 0.1).toFixed(2));
   const grandTotal = subTotal + shipping + tax;
 
   return (
@@ -15,7 +19,7 @@ const Cart = ({ cart }) => {
       <div className="cart_element">
         <div className="summary">
           <h3>Summary</h3>
-          <div className="item_counter">{cart.length}</div>
+          <div className="item_counter">{quantity}</div>
         </div>
         <div className="table">
           <table>
@@ -36,7 +40,7 @@ const Cart = ({ cart }) => {
             <tr>
               <td className="cart_payment__title">Estimated Tax</td>
               <td className="payment">
-                $<p id="tax_rate">{tax.toFixed(2)}</p>
+                $<p id="tax_rate">{tax}</p>
               </td>
             </tr>
             <tr>
