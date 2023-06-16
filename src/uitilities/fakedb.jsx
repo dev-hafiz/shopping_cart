@@ -33,8 +33,19 @@ const removeFromDb = (id) => {
   }
 };
 
+const getStoredCart = () => {
+  let shoppingCart = {};
+  // get shopping-cart from localStorage
+  const storedCart = localStorage.getItem("shopping-cart");
+  if (storedCart) {
+    // eslint-disable-next-line no-unused-vars
+    shoppingCart = JSON.parse(storedCart);
+  }
+  return shoppingCart;
+};
+
 const deleteShoppingCart = () => {
   localStorage.removeItem("shopping-cart");
 };
 
-export { addToDb, removeFromDb, deleteShoppingCart };
+export { addToDb, removeFromDb, deleteShoppingCart, getStoredCart };
