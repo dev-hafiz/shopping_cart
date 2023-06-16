@@ -2,8 +2,6 @@
 
 .cart{
   border-left: 1px solid #E7E2E2;
-  margin-top: 26px;
-  
   }
   
   .cart_element{
@@ -74,3 +72,4 @@
     background: #eac004;
     transition: .3s linear;
   }
+  

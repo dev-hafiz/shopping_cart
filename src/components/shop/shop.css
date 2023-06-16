@@ -6,9 +6,6 @@
   align-items: stretch;
 }
 
-
-
-
 /* Place Order Css */
 .card{
   display: flex;
@@ -72,3 +69,10 @@
  margin-left: 10px;
 }
 
+.cart_area{
+  position: fixed;
+  width: 35%;
+  right: 0;
+  top: 0;
+  margin-top: 150px;
+}

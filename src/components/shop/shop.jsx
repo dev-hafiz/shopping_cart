@@ -9,7 +9,7 @@ const Shop = () => {
   const [cart, setCart] = useState([]);
 
   //Update cart with new and previous state
-  const handleIncrement = (product) => {
+  const addToCart = (product) => {
     const newCart = [...cart, product];
     setCart(newCart);
   };
@@ -17,14 +17,12 @@ const Shop = () => {
     <div className="shop-parent">
       <div className="shop">
         {products.map((product) => (
-          <Product
-            key={product.id}
-            product={product}
-            handleIncrement={handleIncrement}
-          />
+          <Product key={product.id} product={product} addToCart={addToCart} />
         ))}
       </div>
-      <Cart cart={cart} />
+      <div className="cart_area">
+        <Cart cart={cart} />
+      </div>
     </div>
   );
 };

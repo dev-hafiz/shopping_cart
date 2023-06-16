@@ -4,7 +4,7 @@ import "./product.css";
 import Rating from "../rating/rating";
 
 // eslint-disable-next-line react/prop-types
-const Product = ({ product, handleIncrement }) => {
+const Product = ({ product, addToCart }) => {
   // eslint-disable-next-line react/prop-types
   const { img, name, seller, price, stock, star } = product;
   return (
@@ -24,13 +24,13 @@ const Product = ({ product, handleIncrement }) => {
               {/* <FontAwesomeIcon className=" bi-dash-lg" icon={faMinus} />
               <div className="quantity_count">0</div>
               <FontAwesomeIcon
-                onClick={() => handleIncrement(product)}
+                onClick={() => addToCart(product)}
                 className=" bi-plus-lg"
                 icon={faPlus}
               /> */}
 
               <button
-                onClick={() => handleIncrement(product)}
+                onClick={() => addToCart(product)}
                 type="submit"
                 name="button"
               >

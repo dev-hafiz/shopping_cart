@@ -1,6 +1,15 @@
 import "./cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cart }) => {
+  let subTotal = 0;
+  let shipping = 0;
+  for (const product of cart) {
+    subTotal = subTotal + product.price;
+    shipping = shipping + product.shipping;
+  }
+  const tax = subTotal * 0.1;
+  const grandTotal = subTotal + shipping + tax;
+
   return (
     <div className="cart">
       <div className="cart_element">
@@ -13,7 +22,7 @@ const Cart = ({ cart }) => {
             <tr className="table_tr">
               <td className="cart_payment__title">Subtotal</td>
               <td className="payment">
-                $<p id="sub_total">00.00</p>
+                $<p id="sub_total">{subTotal.toFixed(2)}</p>
               </td>
             </tr>
             <tr>
@@ -21,20 +30,20 @@ const Cart = ({ cart }) => {
                 Estimated Shipping & Handing
               </td>
               <td className="payment">
-                $<p id="shipping_cost">00.00</p>
+                $<p id="shipping_cost">{shipping.toFixed(2)}</p>
               </td>
             </tr>
             <tr>
               <td className="cart_payment__title">Estimated Tax</td>
               <td className="payment">
-                $<p id="tax_rate">0.00%</p>
+                $<p id="tax_rate">{tax.toFixed(2)}</p>
               </td>
             </tr>
             <tr>
               <div className="cart_payment__title space">
                 <td>Grand Total</td>
                 <td className="payment">
-                  $<p id="grand_total">00.00</p>
+                  $<p id="grand_total">{grandTotal.toFixed(2)}</p>
                 </td>
               </div>
             </tr>
