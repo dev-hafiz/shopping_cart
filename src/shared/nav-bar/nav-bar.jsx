@@ -5,13 +5,10 @@ const NavBar = () => {
     <div className="routes_area">
       <div className="left_area">
         <NavLink to="/">
-          <p className="route">Home</p>
-        </NavLink>
-        <NavLink to="/shop">
           <p className="route">Shop</p>
         </NavLink>
         <NavLink to="/orderreview">
-          <p className="route">Order Review</p>
+          <p className="route">Orders Review</p>
         </NavLink>
       </div>
       <div className="right_area">
