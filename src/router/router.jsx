@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import NotFound from "../components/not-found/not-found";
 import Shop from "../components/shop/shop";
-import ReviewOrder from "../components/review-order/review-order";
+import { loaderCartAndProducts } from "../loaders/loaderCartAndProducts";
+import ReviewOrder from "../components/review-order/reviewOrder";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,11 @@ export const router = createBrowserRouter([
         },
         element: <Shop />,
       },
-      { path: "orderreview", element: <ReviewOrder /> },
+      {
+        path: "orderreview",
+        loader: loaderCartAndProducts,
+        element: <ReviewOrder />,
+      },
     ],
     errorElement: <NotFound />,
   },

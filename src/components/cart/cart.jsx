@@ -1,7 +1,6 @@
 import "./cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cart }) => {
-  console.log(cart);
   let subTotal = 0;
   let shipping = 0;
   let quantity = 0;

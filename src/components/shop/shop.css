@@ -1,5 +1,5 @@
 /* Left Side Shop Area styles  */
-.shop-parent{
+.product-parent{
   display: grid;
   grid-template-columns: 8fr 4fr;
   justify-items: stretch;

@@ -41,8 +41,8 @@ const Shop = () => {
     addToDb(selectedProduct.id);
   };
   return (
-    <div className="shop-parent">
-      <div className="shop">
+    <div className="product-parent">
+      <div>
         {products.map((product) => (
           <Product key={product.id} product={product} addToCart={addToCart} />
         ))}
