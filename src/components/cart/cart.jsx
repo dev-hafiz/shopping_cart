@@ -1,8 +1,7 @@
+import { NavLink } from "react-router-dom";
 import "./cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cart }) => {
-  console.log("cart", cart);
-
   let subTotal = 0;
   let shipping = 0;
   let quantity = 0;
@@ -56,7 +55,12 @@ const Cart = ({ cart }) => {
         </div>
         <div className="order_button">
           <button className="button" type="submit" name="button">
-            Review Your Order
+            <NavLink
+              style={{ textDecoration: "none", color: "#000" }}
+              to="/orderreview"
+            >
+              Review Your Orders
+            </NavLink>
           </button>
         </div>
       </div>

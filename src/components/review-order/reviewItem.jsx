@@ -2,7 +2,7 @@ import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Rating from "../rating/rating";
 
-const ReviewItem = ({ product }) => {
+const ReviewItem = ({ product, handleRemoveItem }) => {
   const { id, img, name, star, price } = product || {};
 
   return (
@@ -27,7 +27,11 @@ const ReviewItem = ({ product }) => {
         </div> */}
       </div>
       <div className="cancle_button">
-        <FontAwesomeIcon size="lg" icon={faCircleXmark} />
+        <FontAwesomeIcon
+          onClick={() => handleRemoveItem(id)}
+          size="lg"
+          icon={faCircleXmark}
+        />
       </div>
     </div>
   );
