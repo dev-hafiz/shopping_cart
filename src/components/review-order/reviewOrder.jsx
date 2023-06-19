@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Cart from "../cart/cart";
 import ReviewItem from "./reviewItem";
-import { removeFromDb } from "../../uitilities/fakedb";
 
 const ReviewOrder = () => {
   const { savedCart } = useLoaderData();
@@ -11,13 +10,12 @@ const ReviewOrder = () => {
   const handleRemoveItem = (id) => {
     const remaining = cart.filter((product) => product.id !== id);
     setCart(remaining);
-    removeFromDb(id);
   };
 
   return (
     <div className="product-parent">
       <div>
-        {savedCart.map((product) => (
+        {cart.map((product) => (
           <ReviewItem
             key={product.id}
             product={product}
