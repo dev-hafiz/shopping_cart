@@ -28,6 +28,11 @@ body{
 .deal{
   margin-left: -134px;
 }
-.text{
-  margin-left: 3px;
+.link{
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+.link:hover{
+  color: #FFD866;
 }

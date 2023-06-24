@@ -1,0 +1,86 @@
+.form-container{
+  width: 370px;
+  height: 460px;
+  border: 1px solid #D8D9DA;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 30px 40px;
+  box-shadow: -3px 5px 6px #f3a847ab;
+}
+.form-title{
+  text-align: center;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 20px;
+}
+.form-control {
+ margin-bottom: 10px;
+}
+.form-control label {
+  display: block;
+  font-size: 14px;
+}
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  border: 1px solid #D8D9DA;
+  border-radius: 4px;
+}
+
+.submit-btn{
+  background: #f3a847ab;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.toggle-text{
+  margin-top: 6px;
+  font-style: 10px;
+  text-align: center;
+}
+
+.line-bar{
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+}
+
+.or-line::after {
+  content: "";
+  position: absolute;
+  top: 57%;
+  width: 30%;
+  left: 14%;
+  height: 1px;
+  background-color: #ccccccc4;
+}
+.or-line::before {
+  content: "";
+  position: absolute;
+  top: 57%;
+  width: 30%;
+  right: 14%;
+  height: 1px;
+  background-color: #ccccccc4;
+}
+
+.google-btn{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 7px;
+  background: none;
+  border: 1px solid #D8D9DA;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+.google-btn img{
+  width: 20px;
+  margin-left: 50px;
+  margin-right: 10px;
+}

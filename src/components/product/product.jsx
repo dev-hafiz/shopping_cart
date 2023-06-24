@@ -1,8 +1,5 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./product.css";
-// import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import Rating from "../rating/rating";
-
 // eslint-disable-next-line react/prop-types
 const Product = ({ product, addToCart }) => {
   // eslint-disable-next-line react/prop-types
@@ -18,17 +15,7 @@ const Product = ({ product, addToCart }) => {
           <p className="stock">only {stock} left in stock - order soon</p>
           <Rating star={star} />
           <div className="quantity">
-            {/* <p className="quantity_text">Quantity:</p> */}
             <div className="buttons">
-              {/* Will Implement  */}
-              {/* <FontAwesomeIcon className=" bi-dash-lg" icon={faMinus} />
-              <div className="quantity_count">0</div>
-              <FontAwesomeIcon
-                onClick={() => addToCart(product)}
-                className=" bi-plus-lg"
-                icon={faPlus}
-              /> */}
-
               <button
                 onClick={() => addToCart(product)}
                 type="submit"

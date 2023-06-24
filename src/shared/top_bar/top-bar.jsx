@@ -5,6 +5,7 @@ import {
   faQuestion,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -22,7 +23,13 @@ const TopBar = () => {
       </div>
       <div className="child">
         <FontAwesomeIcon icon={faUser} />
-        <p className="text">Sign In / Register</p>
+        <NavLink className="link" to="/login">
+          Login
+        </NavLink>
+        {"/"}
+        <NavLink className="link" to="/register">
+          Register
+        </NavLink>
       </div>
     </div>
   );
