@@ -1,8 +1,7 @@
 .form-container{
   width: 370px;
-  height: 460px;
   border: 1px solid #D8D9DA;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: 4px;
   padding: 30px 40px;
   box-shadow: -3px 5px 6px #f3a847ab;
@@ -37,6 +36,10 @@
   margin-top: 30px;
   border-radius: 3px;
   font-weight: 700;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background: #da9842ab;
 }
 .toggle-text{
   margin-top: 6px;
@@ -83,4 +86,8 @@
   width: 20px;
   margin-left: 50px;
   margin-right: 10px;
+}
+
+.error-text{
+  color: #a30a05;
 }

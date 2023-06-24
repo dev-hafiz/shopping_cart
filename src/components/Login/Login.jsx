@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { NavLink } from "react-router-dom";
 import "./Login.css";
 import googleIcon from "../../../src/assets/googleIcon.png";
